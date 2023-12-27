@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Install Apache
-    apt:
+    ansible.builtin.apt:
       name: apache2
       state: present
 
